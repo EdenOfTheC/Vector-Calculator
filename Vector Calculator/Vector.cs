@@ -23,69 +23,67 @@ namespace Vector_Calculator
             return $"<{x}, {y}, {z}>";
         }
 
-        public float GetMagnitude()
+        public double GetMagnitude()
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
-            throw new NotImplementedException();
+            return Math.Sqrt((x * x) + (y * y) + (z * z));
         }
 
-        public float GetDirection()
+        public double GetDirection()
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
-            throw new NotImplementedException();
+
+            return Math.Atan((y / x));
         }
 
         public static Vector Add(Vector v1, Vector v2)
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
-            throw new NotImplementedException();
+            return new Vector(v1.x + v2.x, v1.y + v2.y, v1.z + v2.z);
         }
 
         public static Vector Negate(Vector v)
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
-            throw new NotImplementedException();
+            Vector Output = new Vector(v.x, v.y, v.z);
+            Output.x -= (v.x * 2);
+            return Output; 
         }
 
         public static Vector Subtract(Vector v1, Vector v2)
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
-            throw new NotImplementedException();
+            return new Vector(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z);
         }
 
         public static Vector Scale(Vector v)
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
-            throw new NotImplementedException();
+            
+            
         }
 
         public static Vector Normalize(Vector v)
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
+            
             throw new NotImplementedException();
         }
 
         public static float DotProduct(Vector v1, Vector v2)
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
+           
             throw new NotImplementedException();
         }
 
         public static Vector CrossProduct(Vector v1, Vector v2)
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
+            
             throw new NotImplementedException();
         }
 
         public static Vector AngleBetween(Vector v1, Vector v2)
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
+            
             throw new NotImplementedException();
         }
 
         public static Vector ProjectOnto(Vector v1, Vector v2)
         {
-            // ADD CODE HERE, THEN REMOVE BELOW LINE
+            
             throw new NotImplementedException();
         }
     }
